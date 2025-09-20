@@ -1,0 +1,79 @@
+{% set page = 'home' %}
+{% set h1 = "Home" %}
+{% set subtitle = "Task 1 UI recreated using Nunjucks + Gulp (Task 2 requirements)" %}
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="row align-items-center gy-4 mb-5">
+  <div class="col-lg-6">
+    <h2 class="fw-bold">Build clean, responsive pages with Bootstrap 5</h2>
+    <p class="text-secondary">Remix navbars, heroes, cards, and forms into modern layouts — fast.</p>
+    <div class="d-flex gap-2">
+      <a href="/about.html" class="btn btn-primary btn-lg">Explore Features</a>
+      <a href="/contact.html" class="btn btn-outline-secondary btn-lg">Get in Touch</a>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div id="hero" class="carousel slide rounded-4 overflow-hidden shadow">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1507209696998-3c532be9b2b8?q=80&w=1200&auto=format&fit=crop" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<section class="mb-5">
+  <div class="text-center mb-4">
+    <h3 class="fw-bold">Why this UI</h3>
+    <p class="text-secondary">Composable components, consistent spacing, accessible by design.</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Grid & Utilities</h5>
+          <p class="text-secondary">12-column grid and utility classes make layout a breeze.</p>
+          <a href="/about.html#services" class="stretched-link">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Customizable</h5>
+          <p class="text-secondary">Tiny stylesheet for color/spacing to make it yours.</p>
+          <a href="/about.html#services" class="stretched-link">Learn more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-4">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title">Mobile-first</h5>
+          <p class="text-secondary">Designed for phones first, then enhanced for larger screens.</p>
+          <a href="/about.html#services" class="stretched-link">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-body-tertiary rounded-4">
+  <div class="container px-0 text-center">
+    <h3 class="fw-bold mb-2">Ready to start?</h3>
+    <p class="text-secondary mb-4">Clone, remix, and deploy to GitHub Pages or Netlify.</p>
+    <a href="/contact.html" class="btn btn-primary btn-lg">Contact Us</a>
+  </div>
+</section>
+{% endblock %}

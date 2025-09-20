@@ -1,0 +1,29 @@
+:root {
+  --brand-start: #6e8bff;
+  --brand-end: #75e1ff;
+  --ink: #0b1220;
+}
+
+* { box-sizing: border-box; }
+body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: var(--ink); }
+
+.hero-gradient {
+  background: linear-gradient(120deg, rgba(110,139,255,.12), rgba(117,225,255,.12));
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+
+.text-highlight {
+  background: linear-gradient(120deg, var(--brand-start), var(--brand-end));
+  -webkit-background-clip: text; background-clip: text;
+  color: transparent;
+}
+
+.card { border-radius: 14px; }
+.card:hover { transform: translateY(-2px); transition: .2s ease; }
+
+pre {
+  background: #f7f8fb; border: 1px solid #eef0f6; border-radius: 12px;
+  padding: 12px 14px; overflow: auto;
+}
+
+code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
